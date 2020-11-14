@@ -1,0 +1,13 @@
+.main {
+  &__landing {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-items: center;
+  }
+  &__title {
+    color: $indigo;
+  }
+  &__img {
+    height: 30rem;
+  }
+}
