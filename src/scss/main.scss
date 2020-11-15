@@ -4,9 +4,11 @@
 @import 'layout/footer';
 @import 'layout/main';
 
-body {
-  padding: 2rem;
+.page__container {
   height: 100vh;
   font-family: $font-main;
   background-color: $yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

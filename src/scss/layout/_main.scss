@@ -2,12 +2,54 @@
   &__landing {
     display: flex;
     flex-flow: column-reverse wrap;
+    justify-content: center;
     align-items: center;
+  }
+  &__container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 2rem 0;
+  }
+  &__text {
+    color: $indigo;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
   }
   &__title {
     color: $indigo;
   }
   &__img {
-    height: 30rem;
+    height: 10rem;
+  }
+}
+
+//responsive
+@media all and (min-width: 768px) {
+  .main {
+    &__img {
+      height: 20rem;
+    }
+    &__title {
+      font-size: 3.75rem;
+    }
+    &__text {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .main {
+    &__img {
+      height: 20rem;
+    }
+    &__title {
+      font-size: 3.75rem;
+    }
+    &__text {
+      font-size: 1.5rem;
+    }
   }
 }
