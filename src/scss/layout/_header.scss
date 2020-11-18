@@ -1,19 +1,48 @@
 .header {
   &__container {
-    padding: 1rem;
+    padding: 1rem 2rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   &__menu {
     display: flex;
   }
   &__menu-item {
-    padding: 0 2rem;
+    padding: 0 1.5rem;
     list-style: none;
   }
   &__link {
     text-decoration: none;
     color: $indigo;
     font-weight: 600;
+  }
+  &__icon {
+    height: 1.5rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+// responsive
+@media all and (min-width: 768px) {
+  .header {
+    &__icon {
+      height: 2rem;
+    }
+    &__link {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .header {
+    &__icon {
+      height: 2.25rem;
+    }
+    &__link {
+      font-size: 1.5rem;
+    }
   }
 }

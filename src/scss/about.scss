@@ -1,0 +1,39 @@
+@import 'core/variables';
+@import 'core/reset';
+
+.page__container {
+  height: 100vh;
+  font-family: $font-main;
+  background-color: $cyan;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.main {
+  &__container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  &__img {
+    height: 20rem;
+  }
+}
+
+.poem {
+  &__container {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}

@@ -1,11 +1,11 @@
 .main {
-  &__landing {
+  &__container {
     display: flex;
     flex-flow: column-reverse wrap;
     justify-content: center;
     align-items: center;
   }
-  &__container {
+  &__intro {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -23,6 +23,13 @@
   &__img {
     height: 10rem;
   }
+  &__title-img {
+    height: 1.65rem;
+  }
+  &__text-img {
+    margin-top: 2rem;
+    height: 3rem;
+  }
 }
 
 //responsive
@@ -37,19 +44,31 @@
     &__text {
       font-size: 1.25rem;
     }
+    &__title-img {
+      height: 3rem;
+    }
+    &__text-img {
+      height: 6rem;
+    }
   }
 }
 
 @media all and (min-width: 1024px) {
   .main {
     &__img {
-      height: 20rem;
+      height: 25rem;
     }
     &__title {
       font-size: 3.75rem;
     }
     &__text {
       font-size: 1.5rem;
+    }
+    &__title-img {
+      height: 4rem;
+    }
+    &__text-img {
+      height: 8rem;
     }
   }
 }
