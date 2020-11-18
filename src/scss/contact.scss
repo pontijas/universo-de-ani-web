@@ -4,10 +4,33 @@
 .page__container {
   height: 100vh;
   font-family: $font-main;
-  background-color: $yellow;
+  background-color: $cyan;
+  color: $white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.header {
+  &__container {
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__nav {
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+  }
+  &__icon {
+    padding-left: 0.5rem;
+    height: 2rem;
+  }
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .main {
@@ -16,5 +39,11 @@
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+  }
+}
+
+.footer {
+  &__container {
+    padding: 1rem;
   }
 }
