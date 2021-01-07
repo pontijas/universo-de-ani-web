@@ -30,6 +30,11 @@
     text-decoration: none;
     color: inherit;
   }
+  &__back {
+    &:hover {
+      border-bottom: 3px solid $white;
+    }
+  }
 }
 .main {
   &__container {
@@ -39,21 +44,62 @@
     align-items: center;
   }
   &__img {
-    height: 20rem;
+    width: 60vw;
+    margin-bottom: 2rem;
   }
 }
 
 .poem {
   &__container {
-    height: 30vh;
+    width: 80vw;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    font-size: 1.3rem;
   }
 }
 
 .footer {
   &__container {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-items: center;
     padding: 1rem;
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50vw;
+    margin-bottom: 1rem;
+  }
+  &__icon {
+    width: 3rem;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .main {
+    &__img {
+      width: 20vw;
+      margin-bottom: 2rem;
+    }
+  }
+  .footer {
+    &__container {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+    &__social {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 10vw;
+      margin-bottom: 1rem;
+    }
   }
 }

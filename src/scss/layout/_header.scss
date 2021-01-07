@@ -2,7 +2,7 @@
   &__container {
     padding: 1rem 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   &__menu {
     display: flex;
@@ -14,9 +14,14 @@
   &__link {
     text-decoration: none;
     color: $indigo;
+    font-size: 1.5rem;
     font-weight: 600;
+    &:hover {
+      border-bottom: 3px solid $indigo;
+    }
   }
   &__icon {
+    display: none;
     height: 1.5rem;
     &:hover {
       cursor: pointer;
@@ -38,6 +43,11 @@
 
 @media all and (min-width: 1024px) {
   .header {
+    &__container {
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: flex-start;
+    }
     &__icon {
       height: 2.25rem;
     }
