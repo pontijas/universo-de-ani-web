@@ -78,6 +78,7 @@
   &__input-text {
     font-family: $font-main;
     height: 8rem;
+    padding-top: 1rem;
   }
   &__btn {
     height: 45px;
@@ -134,36 +135,19 @@
   }
   .form {
     &__wrap {
-      border-radius: 2rem;
-      background-color: $white;
       width: 50vw;
       height: 70vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
     &__container {
-      color: $pink;
-      font-weight: 600;
       width: 40vw;
       height: 60vh;
+    }
+    &__btn-wrap {
       display: flex;
-      flex-flow: column wrap;
-      justify-content: space-evenly;
-    }
-    &__input {
-      font-family: $font-main;
-      height: 2rem;
-      padding: 0 1rem;
-      border: 1px solid $pink;
-      border-radius: 4px;
-    }
-    &__input-text {
-      font-family: $font-main;
-      height: 8rem;
+      justify-content: center;
     }
     &__btn {
-      width: 50%;
+      width: 30%;
     }
   }
 }
