@@ -1,6 +1,10 @@
 @import 'core/variables';
 @import 'core/reset';
 
+.svg {
+  display: none;
+}
+
 .page__container {
   height: 100vh;
   font-family: $font-main;
@@ -33,7 +37,7 @@
   }
   &__back {
     &:hover {
-      border-bottom: 3px solid $white;
+      color: $indigo;
     }
   }
 }
@@ -92,6 +96,11 @@
     letter-spacing: 1.5pt;
     font-weight: 600;
     width: 100%;
+    transition: 0.5s ease background-color;
+    &:hover {
+      cursor: pointer;
+      background-color: $orange;
+    }
   }
 }
 
@@ -110,7 +119,12 @@
     margin-bottom: 1rem;
   }
   &__icon {
+    height: 3rem;
     width: 3rem;
+    fill: $white;
+    &:hover {
+      fill: $indigo;
+    }
   }
 }
 
