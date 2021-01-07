@@ -23,7 +23,20 @@
       <h1>Contacto</h1>
     </header>
     <main class="main__container">
-      <p>Main</p>
+      <div class="form__wrap">
+        <form class="form__container" method="POST">
+          <label for="Nombre">¿Cómo te llamas?</label>
+          <input class="form__input" type="text" name="nombre" id="nombre" placeholder="Tu nombre" required />
+
+          <label for="Email">Email</label>
+          <input class="form__input" type="email" name="email" id="" placeholder="nombre@email.com" required />
+
+          <label for="Mensaje">Mensaje</label>
+          <textarea class="form__input form__input-text" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Cuéntame :)" required></textarea>
+
+          <input class="form__btn" type="submit" value="enviar" />
+        </form>
+      </div>
     </main>
     <footer class="footer__container">
       <small> &copy; Todos los derechos reservados </small>

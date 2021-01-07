@@ -47,6 +47,53 @@
   }
 }
 
+// form
+
+.form {
+  &__wrap {
+    border-radius: 2rem;
+    background-color: $white;
+    width: 90vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__container {
+    color: $pink;
+    font-weight: 600;
+    width: 75vw;
+    height: 60vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+  }
+  &__input {
+    font-family: $font-main;
+    height: 2rem;
+    padding: 0 1rem;
+    border: 1px solid $pink;
+    border-radius: 4px;
+  }
+  &__input-text {
+    font-family: $font-main;
+    height: 8rem;
+  }
+  &__btn {
+    height: 45px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    background-color: $pink;
+    color: $white;
+    font-family: $font-main;
+    letter-spacing: 1.5pt;
+    font-weight: 600;
+    width: 100%;
+  }
+}
+
 .footer {
   &__container {
     display: flex;
@@ -63,5 +110,60 @@
   }
   &__icon {
     width: 3rem;
+  }
+}
+
+// responsive
+
+@media all and (min-width: 1024px) {
+  .footer {
+    &__container {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+    &__social {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 10vw;
+      margin-bottom: 1rem;
+    }
+  }
+  .form {
+    &__wrap {
+      border-radius: 2rem;
+      background-color: $white;
+      width: 50vw;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__container {
+      color: $pink;
+      font-weight: 600;
+      width: 40vw;
+      height: 60vh;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-evenly;
+    }
+    &__input {
+      font-family: $font-main;
+      height: 2rem;
+      padding: 0 1rem;
+      border: 1px solid $pink;
+      border-radius: 4px;
+    }
+    &__input-text {
+      font-family: $font-main;
+      height: 8rem;
+    }
+    &__btn {
+      width: 50%;
+    }
   }
 }
