@@ -1,5 +1,5 @@
-@import 'core/variables';
-@import 'core/reset';
+@import "core/variables";
+@import "core/reset";
 
 .svg {
   display: none;
@@ -22,14 +22,20 @@
     flex-direction: row;
     justify-content: space-between;
   }
+  &__icon {
+    height: 2.5rem;
+    width: 3rem;
+    fill: $cyan;
+    transition: 0.3s ease fill;
+    &:hover {
+      fill: $indigo;
+    }
+  }
   &__nav {
     display: flex;
     flex-flow: row-reverse;
   }
-  &__icon {
-    padding-left: 0.5rem;
-    height: 2rem;
-  }
+
   &__link {
     text-decoration: none;
     color: inherit;
@@ -83,6 +89,7 @@
     height: 3rem;
     width: 3rem;
     fill: $cyan;
+    transition: 0.3s ease fill;
     &:hover {
       fill: $indigo;
     }
