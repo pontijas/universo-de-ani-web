@@ -26,7 +26,7 @@
     </header>
     <main class="main__container">
       <div class="form__wrap">
-        <form class="form__container" action="" method="POST">
+        <form class="form__container" action="https://formspree.io/f/mjvpjeoq" method="POST" id="my-form">
           <section class="form__wrap-section">
           <label for="Nombre">¿Cómo te llamas?</label>
           <input class="form__input" type="text" name="name" id="name" placeholder="Tu nombre" required />
@@ -42,6 +42,9 @@
           <div class="form__btn-wrap">
             <input class="form__btn" type="submit" value="enviar" />
           </div>
+          <div class="form__btn-wrap">
+          <div id="status" class=""></div>
+        </div>
         </form>
       </div>
     </main>
@@ -56,5 +59,6 @@
         </a>
       </section>
     </footer>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
