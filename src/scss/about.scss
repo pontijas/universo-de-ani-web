@@ -99,8 +99,14 @@
 @media all and (min-width: 1024px) {
   .main {
     &__img {
-      width: 20vw;
+      width: 15vw;
       margin-bottom: 2rem;
+    }
+  }
+  .poem {
+    &__container {
+      line-height: 3rem;
+      margin-bottom: 4rem;
     }
   }
   .footer {

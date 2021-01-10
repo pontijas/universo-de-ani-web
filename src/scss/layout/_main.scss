@@ -17,18 +17,36 @@
     text-align: center;
     margin-top: 1rem;
   }
-  &__title {
-    color: $indigo;
-  }
   &__img {
     width: 90vw;
   }
   &__title-img {
     width: 80vw;
+    opacity: 0;
+    animation-name: opacity;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
   }
   &__text-img {
     margin-top: 2rem;
     width: 80vw;
+    opacity: 0;
+    animation-name: opacity;
+    animation-delay: 2s;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+  }
+}
+
+// animation
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
   }
 }
 
