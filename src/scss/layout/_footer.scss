@@ -1,8 +1,51 @@
 .footer {
   &__container {
-    padding: 1rem;
-    color: $indigo;
+    padding-top:0.5rem;
+    color: $black;
+    background-color: $white;
+    width:100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__social {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    width: 50vw;
+    margin-left:2rem;
+    margin-bottom: 0.5rem;
+  }
+  &__icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: $black;
+    transition: 0.3s ease fill;
+    &:hover {
+      fill: $cyan;
+    }
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .footer {
+    &__container {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+    &__social {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 10vw;
+      margin-left:0;
+    }
   }
 }

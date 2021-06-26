@@ -1,10 +1,15 @@
 .header {
   &__container {
+    background-color: $white;
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
+    align-items: center;
+
   }
   &__menu {
     display: flex;
+    display:none;
   }
   &__menu-item {
     list-style: none;
@@ -13,11 +18,20 @@
   &__link {
     text-decoration: none;
     color: $indigo;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
     transition: 0.3s ease color;
     &:hover {
       color: $pink;
+    }
+  }
+  &__icon {
+    height: 3rem;
+    width: 3rem;
+    fill: $black;
+    transition: 0.3s ease fill;
+    &:hover {
+      fill: $pink;
     }
   }
 }
@@ -29,7 +43,7 @@
       height: 2rem;
     }
     &__link {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
   }
 }
@@ -39,10 +53,12 @@
     &__container {
       padding: 1rem 2rem;
       display: flex;
-      justify-content: flex-start;
+      justify-content: space-between;
+      align-items: center;
     }
     &__icon {
-      height: 2.25rem;
+      height: 3rem;
+      width:3rem;
     }
     &__link {
       font-size: 1.5rem;
